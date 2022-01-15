@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden; }
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 500px;
+  color: #ffff;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black; }
+
+.colors {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  flex-direction: row;
+  align-items: center;
+  padding: 0 15px;
+  justify-content: space-between;
+  background-color: #f1f1f1;
+  border-radius: 50px; }
+  .colors #orange {
+    width: 30px;
+    height: 30px;
+    background-color: #ffa72c;
+    border-radius: 50px;
+    border: none;
+    transition: all 2 ease-in; }
+    .colors #orange:hover {
+      cursor: pointer; }
+    .colors #orange:active {
+      background-color: #ffac14; }
+  .colors #blue {
+    width: 30px;
+    height: 30px;
+    background-color: #5e3dff;
+    border: none;
+    border-radius: 50px;
+    transition: all 2 ease-in; }
+    .colors #blue:hover {
+      cursor: pointer; }
+    .colors #blue:active {
+      background-color: #3333ff; }
+  .colors #black {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #000;
+    border-radius: 50px;
+    transition: all 2 ease-in; }
+    .colors #black:hover {
+      cursor: pointer; }
+    .colors #black:active {
+      background-color: #333333; }
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  gap: 25px;
+  transform: translateX(-50%); }
+  .buttons .button {
+    width: 220px;
+    height: 70px; }
+  .buttons .button--primary {
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    gap: 12px;
+    color: #fff;
+    background-color: #000;
+    border: 0;
+    border-radius: 12px;
+    transition: all 2 ease-in-out; }
+    .buttons .button--primary:hover {
+      cursor: pointer; }
+    .buttons .button--primary img {
+      width: 30px; }
+    .buttons .button--primary:hover {
+      background-color: #292929; }
+    .buttons .button--primary:active {
+      background-color: black; }
+  .buttons .button--secondary {
+    font-size: 22px;
+    font-weight: 300;
+    color: #9c9c9c;
+    border: 0;
+    background: none;
+    transition: all 2 ease-in-out; }
+    .buttons .button--secondary:hover {
+      cursor: pointer; }
+    .buttons .button--secondary:active {
+      color: #afafaf; }
