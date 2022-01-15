@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <title>My first three.js app</title>
-    <link rel="stylesheet" href="./public/css/index.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 320px) and (max-device-width: 500px)" href="./public/css/mobile.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 501px)" href="./public/css/index.css" />  
   </head>
   <body>
     <!-- Colors -->
@@ -21,12 +22,7 @@
     <section class="buttons">
       <button id="get-in" class="button button--primary">
         <span id="play-span">Play</span>
-        <img
-          src="./assets/icons/steering-wheel.svg"
-          alt="steering wheel icon"
-        />
       </button>
-      <button class="button--secondary">Watch a trailer</button>
     </section>
 
     <!-- Model -->
